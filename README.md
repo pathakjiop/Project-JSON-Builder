@@ -1,8 +1,4 @@
-# GitHub → Toon Format Generator (Gemini API)
 
-# README.md
-
-````md
 # GitHub → Toon Generator
 
 > Turn any GitHub repository into an AI-readable Toon index using Gemini.
