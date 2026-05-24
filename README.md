@@ -1,5 +1,11 @@
-
 # GitHub → Toon Generator
+
+> Experimental infrastructure for AI-native code understanding.
+
+![Experimental](https://img.shields.io/badge/status-experimental-orange)
+![AI](https://img.shields.io/badge/focus-AI%20Code%20Understanding-blue)
+![Toon](https://img.shields.io/badge/output-Toon-green)
+![Gemini](https://img.shields.io/badge/powered%20by-Gemini-red)
 
 > Turn any GitHub repository into an AI-readable Toon index using Gemini.
 
@@ -33,16 +39,62 @@ Repository Tree
 Gemini AI
     ↓
 Toon Code Index
-````
+```
 
 The result is a structured representation of the codebase that can be used by:
 
-* AI coding agents
-* code search systems
-* refactoring tools
-* RAG pipelines
-* developer tools
-* semantic retrieval systems
+- AI coding agents
+- code search systems
+- refactoring tools
+- RAG pipelines
+- developer tools
+- semantic retrieval systems
+
+---
+
+# Why This Matters
+
+Most developers think AI coding works like this:
+
+```txt
+Prompt → AI → Code
+```
+
+But modern AI systems actually work like this:
+
+```txt
+Repository
+   ↓
+Indexing
+   ↓
+Symbol Extraction
+   ↓
+Dependency Graphs
+   ↓
+Retrieval
+   ↓
+Context Engine
+   ↓
+AI Generation
+```
+
+The real breakthrough in AI coding is not larger models.
+
+It is better repository understanding.
+
+This project explores that exact idea.
+
+Instead of forcing AI to read entire repositories repeatedly,
+we generate lightweight structural maps that AI can navigate efficiently.
+
+That is one of the core architectural ideas behind:
+
+- Cursor
+- Claude Code
+- Copilot
+- Sourcegraph
+- Semantic code search systems
+- Autonomous coding agents
 
 ---
 
@@ -52,12 +104,12 @@ Large language models struggle with huge codebases.
 
 Problems:
 
-❌ Too many files
-❌ Too many tokens
-❌ Expensive context windows
-❌ Slow retrieval
-❌ Unstructured repositories
-❌ Hard dependency tracking
+❌ Too many files  
+❌ Too many tokens  
+❌ Expensive context windows  
+❌ Slow retrieval  
+❌ Unstructured repositories  
+❌ Hard dependency tracking  
 
 This project introduces a simplified solution:
 
@@ -68,12 +120,54 @@ into lightweight AI-readable maps
 
 That is one of the foundational ideas behind:
 
-* Cursor
-* Copilot
-* Sourcegraph
-* Claude Code
-* AI retrieval systems
-* semantic code search engines
+- Cursor
+- Copilot
+- Sourcegraph
+- Claude Code
+- AI retrieval systems
+- semantic code search engines
+
+---
+
+# How This Helps AI Fix Bugs
+
+Without repository indexing:
+
+```txt
+User:
+"Fix authentication bug"
+
+AI:
+Reads random files blindly
+```
+
+With Toon indexing:
+
+```txt
+auth/
+ ├─ login.ts
+ ├─ jwt.ts
+ ├─ middleware.ts
+ └─ session.ts
+```
+
+AI instantly understands:
+
+- where authentication logic lives
+- which functions are connected
+- where tokens are created
+- where sessions are validated
+- what files are related
+
+Now AI can:
+
+✅ navigate directly to relevant code  
+✅ avoid scanning entire repositories  
+✅ reduce hallucinations  
+✅ generate targeted fixes  
+✅ understand architecture faster  
+✅ perform safer refactors  
+✅ debug large codebases more efficiently  
 
 ---
 
@@ -112,11 +206,11 @@ Much smarter.
 
 Build your own:
 
-* Cursor-like editor
-* AI refactoring engine
-* autonomous coding agent
-* code navigator
-* semantic retrieval system
+- Cursor-like editor
+- AI refactoring engine
+- autonomous coding agent
+- code navigator
+- semantic retrieval system
 
 ---
 
@@ -124,10 +218,10 @@ Build your own:
 
 Analyze:
 
-* enterprise monorepos
-* microservice architectures
-* open source ecosystems
-* legacy systems
+- enterprise monorepos
+- microservice architectures
+- open source ecosystems
+- legacy systems
 
 without manually exploring thousands of files.
 
@@ -137,11 +231,11 @@ without manually exploring thousands of files.
 
 Use generated Toon indexes as:
 
-* retrieval metadata
-* vector DB context
-* chunk routing
-* symbol references
-* dependency hints
+- retrieval metadata
+- vector DB context
+- chunk routing
+- symbol references
+- dependency hints
 
 for AI pipelines.
 
@@ -151,11 +245,11 @@ for AI pipelines.
 
 Generate:
 
-* architecture maps
-* API overviews
-* dependency diagrams
-* function registries
-* onboarding docs
+- architecture maps
+- API overviews
+- dependency diagrams
+- function registries
+- onboarding docs
 
 from repositories automatically.
 
@@ -165,11 +259,35 @@ from repositories automatically.
 
 Create:
 
-* VS Code extensions
-* code graph visualizers
-* repo explorers
-* live symbol indexes
-* intelligent search systems
+- VS Code extensions
+- code graph visualizers
+- repo explorers
+- live symbol indexes
+- intelligent search systems
+
+---
+
+# This Is Basically Google Maps For Codebases
+
+Instead of exploring repositories manually:
+
+```txt
+Open folder
+Open file
+Search function
+Trace dependency
+Repeat...
+```
+
+AI gets a structured navigation layer.
+
+Like:
+
+```txt
+Code GPS
+```
+
+for repositories.
 
 ---
 
@@ -188,11 +306,11 @@ Traditional repositories are optimized for humans.
 
 AI systems need:
 
-* compressed structure
-* semantic grouping
-* symbol extraction
-* fast traversal
-* contextual retrieval
+- compressed structure
+- semantic grouping
+- symbol extraction
+- fast traversal
+- contextual retrieval
 
 This project begins exploring that direction.
 
@@ -200,14 +318,14 @@ This project begins exploring that direction.
 
 # Features
 
-✅ GitHub repository parsing
-✅ Gemini AI integration
-✅ Toon-style generation
-✅ AI-readable code maps
-✅ Pure HTML + JavaScript
-✅ Zero framework setup
-✅ Lightweight architecture
-✅ Fast experimentation platform
+✅ GitHub repository parsing  
+✅ Gemini AI integration  
+✅ Toon-style generation  
+✅ AI-readable code maps  
+✅ Pure HTML + JavaScript  
+✅ Zero framework setup  
+✅ Lightweight architecture  
+✅ Fast experimentation platform  
 
 ---
 
@@ -291,7 +409,7 @@ inside your browser.
 
 Get your API key from:
 
-[https://ai.google.dev/](https://ai.google.dev/)
+https://ai.google.dev/
 
 ---
 
@@ -309,10 +427,10 @@ https://github.com/vercel/next.js
 
 The system will:
 
-* fetch repository tree
-* analyze structure
-* send context to Gemini
-* generate Toon-style JSON
+- fetch repository tree
+- analyze structure
+- send context to Gemini
+- generate Toon-style JSON
 
 ---
 
@@ -348,24 +466,59 @@ Enable Smart Retrieval
 
 # Why Developers Should Care
 
-AI coding is moving toward:
+Most developers only learn:
 
 ```txt
-Structured Retrieval
-instead of
-Raw Prompting
+How to write code
 ```
 
-Future developer tools will rely heavily on:
+Future developers must also learn:
 
-* symbol extraction
-* dependency graphs
-* semantic indexing
-* retrieval pipelines
-* code embeddings
-* incremental indexing
+```txt
+How AI understands code
+```
 
-This project is a simplified experimental prototype of that future.
+That includes:
+
+- indexing systems
+- retrieval pipelines
+- semantic search
+- vector databases
+- AST traversal
+- code graphs
+- RAG for codebases
+- context engineering
+
+Understanding these systems will become a massive advantage in the AI era.
+
+---
+
+# The Future Of AI Coding
+
+The future is NOT:
+
+```txt
+Give AI bigger prompts
+```
+
+The future is:
+
+```txt
+Give AI better structure
+```
+
+Future AI systems will rely heavily on:
+
+- AST parsing
+- symbol extraction
+- dependency graphs
+- semantic retrieval
+- embeddings
+- vector databases
+- incremental indexing
+- code understanding engines
+
+This project is a lightweight prototype of that future.
 
 ---
 
@@ -413,11 +566,11 @@ Autonomous Code Editing
 
 Add:
 
-* Tree-sitter
-* Babel parser
-* TypeScript compiler API
-* AST traversal
-* symbol resolution
+- Tree-sitter
+- Babel parser
+- TypeScript compiler API
+- AST traversal
+- symbol resolution
 
 ---
 
@@ -425,12 +578,12 @@ Add:
 
 Add:
 
-* embeddings
-* semantic search
-* chunk routing
-* RAG pipelines
-* vector indexing
-* incremental syncing
+- embeddings
+- semantic search
+- chunk routing
+- RAG pipelines
+- vector indexing
+- incremental syncing
 
 ---
 
@@ -438,15 +591,15 @@ Add:
 
 Add support for:
 
-* imports
-* exports
-* classes
-* interfaces
-* hooks
-* line numbers
-* call graphs
-* dependencies
-* references
+- imports
+- exports
+- classes
+- interfaces
+- hooks
+- line numbers
+- call graphs
+- dependencies
+- references
 
 ---
 
@@ -454,13 +607,13 @@ Add support for:
 
 Inspired by concepts used in:
 
-* Toon Format
-* Cursor
-* Sourcegraph
-* GitHub Copilot
-* Claude Code
-* AST indexing systems
-* semantic retrieval engines
+- Toon Format
+- Cursor
+- Sourcegraph
+- GitHub Copilot
+- Claude Code
+- AST indexing systems
+- semantic retrieval engines
 
 ---
 
@@ -472,12 +625,34 @@ Large repositories may exceed LLM token limits.
 
 Production AI systems solve this using:
 
-* chunking
-* caching
-* embeddings
-* AST indexing
-* incremental summarization
-* retrieval orchestration
+- chunking
+- caching
+- embeddings
+- AST indexing
+- incremental summarization
+- retrieval orchestration
+
+---
+
+# One Sentence Vision
+
+Turn repositories into something AI can actually understand.
+
+---
+
+# Final Thought
+
+Repositories were designed for humans.
+
+AI needs something different:
+
+- structure
+- relationships
+- symbols
+- retrieval
+- semantic navigation
+
+This project explores what repositories may look like in an AI-native future.
 
 ---
 
@@ -496,5 +671,3 @@ Understand repositories structurally
 ```
 
 This project explores that future.
-
----
