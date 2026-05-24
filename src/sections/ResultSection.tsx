@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import { useState, useMemo } from 'react';
 import Editor from '@monaco-editor/react';
 import { Reveal } from '../components/animations/Reveal';
 import { PremiumCard } from '../components/ui/PremiumCard';

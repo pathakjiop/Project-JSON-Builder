@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { PremiumCard } from '../components/ui/PremiumCard';
 import { Input } from '../components/ui/Input';
 import { GlowingButton } from '../components/ui/GlowingButton';
@@ -7,7 +7,6 @@ import { FileTreeSelector } from '../components/ui/FileTreeSelector';
 import { 
   Link, 
   Key, 
-  Code2, 
   AlertCircle, 
   GitFork, 
   ArrowLeft, 
@@ -18,7 +17,6 @@ import {
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import type { GitHubTreeNode } from '../services/github';
-import { isCodeFile, shouldAutoIgnore } from '../services/github';
 
 interface GeneratorSectionProps {
   tree: GitHubTreeNode[] | null;
@@ -177,8 +175,6 @@ export function GeneratorSection({
                     tree={tree}
                     selectedPaths={selectedPaths}
                     onTogglePath={onTogglePath}
-                    onSelectAll={() => onSelectPreset('all')}
-                    onDeselectAll={() => onSelectPreset('none')}
                     onSelectPreset={onSelectPreset}
                   />
                 </div>

@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import { motion } from 'framer-motion';
+import { useEffect, useState } from 'react';
 import { Sparkles, Cpu, Coins, TrendingUp } from 'lucide-react';
 import type { FormatStats } from '../../services/toon';
 

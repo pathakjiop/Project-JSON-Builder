@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import { useState, useMemo } from 'react';
 import { 
   Folder, 
   FolderOpen, 
@@ -19,8 +19,6 @@ interface FileTreeSelectorProps {
   tree: GitHubTreeNode[];
   selectedPaths: Set<string>;
   onTogglePath: (path: string) => void;
-  onSelectAll: () => void;
-  onDeselectAll: () => void;
   onSelectPreset: (preset: 'all' | 'code' | 'none') => void;
 }
 
@@ -35,8 +33,6 @@ export function FileTreeSelector({
   tree,
   selectedPaths,
   onTogglePath,
-  onSelectAll,
-  onDeselectAll,
   onSelectPreset
 }: FileTreeSelectorProps) {
   const [searchTerm, setSearchTerm] = useState('');
